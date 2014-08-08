@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Vlan 361</title>
+        <link rel="stylesheet" type="text/css" href="../css/etiquetas.css">
+        <link rel="stylesheet" type="text/css" href="../css/estructura.css">
+        <script type="text/javascript" href="js/contenido.js"></script>
+        <meta charset="utf-8"/>
+    </head>
+    
+    <body>
+        <div id="principal">
+                        <!--Cabecera de la pagina y donde se encuentra el logo-->
+            <header>
+                <a href="../index.html" title="Inicio"><img id="logo" src="../images/logoo.png" alt="Logotipo"></a>
+            </header>
+            <section> 
+                        <!--Pequeño estilo en el div que contiene el contenido-->
+            <div id="tema" style="width:420;border:1px solid #99ccff;overflow:auto;">
+                 <h2>Ejercicio 361 Vlan</h2>
+                        <p>Aqui ya esta todos lo pasos para llegar a 100% de este ejercicio paso a paso.</p>
+                        <p>Primero descargen el ejercicio 361 desde <a href="https://www.dropbox.com/s/x432avqyfum87sw/361.pka">aqui</a>.</p>
+                        <p>Abran el ejercicio y les mostrara la siguiente imagen de abajo.</p>
+                        <p>Que contiene un solo switch y las instruciones.</p>
+                        <!--Estrutura que ocupo para poner una imagen-->
+                        <div >
+                            <img id="foto" src="imagenes/cisco.JPG" title="Inicio">
+                        </div> 
+                        <p>Ahora las intruciones les dira que creen 2 switch 2960 mas Llamados <span id="resaltado"> S2 y S3</span> y conectelos a un fastethernet como el que se muestra en la imagen.</p>
+                        <div >
+                            <img id="foto" src="imagenes/cisco2.JPG" title="Los 3 switchs">
+                        </div>
+                        <p>Ahora de una vez nos adelantamos para crear las pcs para cada switch y les agregamos sus ips de la tabla de direccionamiento para despues solo enfocarnos en puro codigo.</p>
+                        <p>Colocamos las pc's a el fastethernet indicado en la imagen de abajo.</p>
+                        <div >
+                            <img id="foto" src="imagenes/cisco3.JPG" title="Colocar pcs">
+                        </div>
+                        <p>Y les colocamos las ips de acuerdo ala tabla de direccionamieno.</p>
+                        <div >
+                            <img id="foto" src="imagenes/cisco4.JPG" title="Tabla de direccionamiento">
+                        </div>
+                        <p>Y va quedando asi y deberian llevar un porcentaje hasta este momento de 44%.</p><div >
+                        <div >
+                            <img id="foto" src="imagenes/cisco5.JPG" title="Pcs con ip's">
+                        </div>
+                        <p>Hasta este momento ya acabamos todo lo grafico es hora de empezar a la parte de consola.</p>
+                        <p>Primero vamos a cambiarle los nombres de los switchs con el codigo de abajo y dependiendo de cada switch que sea.</p>
+                        <div >
+                            <img id="foto" src="imagenes/cisco6.JPG" title="Nombre del host">
+                        </div>
+                        <p>Ahora vamos a configurar contraseñas para cada switch con el codigo de abajo.</p>
+                        <div >
+                            <img id="foto" src="imagenes/cisco7.JPG" title="Contraseñas">
+                        </div>
+                        <p>Y repetimos el procedimiento para <span id="resaltado"> S2 y S3</span>.</p>
+                        <p>Toca el momento de agregar la interface de administracio 99 para cada switch con el codigo de abajo.</p>
+                         <div >
+                            <img id="foto" src="imagenes/cisco8.JPG" title="Interfaces de administracion">
+                        </div>
+                        <p>Ahora vamos a borrar las mac de cada switch con el codigo de abajo.</p>
+                        <div >
+                            <img id="foto" src="imagenes/cisco9.JPG" title="Mac">
+                        </div>
+                        <p>Ahora vamos a configurar los puertos de cada pc para  <span id="resaltado">S2</span> y solo repetimos el procedimiento para  <span id="resaltado">S3</span>.</p>
+                         <div >
+                            <img id="foto" src="imagenes/cisco10.JPG" title="Puertos de la pc's">
+                        </div>
+                        <p>Ahora creamos las Vlan's para <span id="resaltado">S1</span> y solo repetimos este procemiento para <span id="resaltado">S2 y S3</span>. </p>
+                        <div >
+                            <img id="foto" src="imagenes/cisco11.JPG" title="Vlan de las pc's">
+                        </div>
+                        <p>Ahora Asignamos los puertos de acceso a las VLAN para el <span id="resaltado">S2 y S3</span>.</p>
+                        <div >
+                            <img id="foto" src="imagenes/cisco12.JPG" title="Puertos de vlan">
+                        </div>
+                        <P>Y solo resta configurar los enlaces troncales para cada switch. </P>
+                        <div >
+                            <img id="foto" src="imagenes/cisco13.JPG" title="Enlaces troncales">
+                        </div>
+                        <p>Y con esto acabamos y su porcentaje debe ser de 100%.</p>
+                         <p>Dar click al boton para descargar el ejercicio completo.</p>
+                        <div id="ver"><a href="https://www.dropbox.com/s/tiremefg9z5e6eg/361.pka">Descargar</a></div>
+            </div><!--Contenido Principal-->
+            </section>
+            <footer>
+                Derechos reservados 2013. Politicas de privacidad de Omar Zarate Company.
+            </footer><!--Pie de pagina-->    
+        </div> <!--Contenedor Principal-->
+    </body>
+</html>

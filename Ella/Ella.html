@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Ella</title>
+        <link rel="stylesheet" type="text/css" href="../css/etiquetas.css">
+        <link rel="stylesheet" type="text/css" href="../css/estructura.css">
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/cycle.js"></script>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">
+        <script type="text/javascript">
+    $(document).ready(function() {
+        
+    $('.slideshow').cycle({
+        fx: 'fade' // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+    });
+    
+      $('.slideshow2').cycle({
+        fx: 'scrollRight' // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+    });
+    
+});
+</script>
+    </head>
+    
+    <body>
+        <div id="principal">
+                        <!--Cabecera de la pagina y donde se encuentra el logo-->
+            <header>
+                <a href="../index.html" title="Inicio"><img id="logo" src="../images/ella.png" alt="Logotipo"></a>
+            </header>
+            <section> 
+                        <!--Pequeño estilo en el div que contiene el contenido-->
+            <div id="tema" style="width:420;border:1px solid #99ccff;overflow:auto;">
+                 <h2 style="text-align: center; color: #003300 !important;">Tu!</h2>
+                     <div class ="slideshow" id="slide">
+                        <img src="images/foto2.jpg" width="933" height="300">
+                        <img src="images/foto4.png" width="933" height="300">
+                        <img src="images/foto3.jpg" width="933" height="300">
+                        <img src="images/foto5.jpg" width="933" height="300">
+                        <img src="images/foto6.jpg" width="933" height="300">
+                        <img src="images/foto8.png" width="933" height="300">
+                    </div>
+                <p style="margin-top: 30px;">Eres un chava complicada y eso me agrada,  aparte algo especial aunque no te guste que te digan así  pero sabes que eres muy especial desde tu manera de como comer y si no te gusta no lo pruebas para nada,  a veces algo enferma con la limpieza y el orden todo debe estar en su lugar porque sino no estas cómoda.</p>
+                <p>Siempre tienes ideas muy locas o casi descabelladas que me sorprenden pero no imposibles te falta un poco de decisión para llevarlas a cabo pero de que puedes, puedes.</p>
+                <p>Siempre envueltas en deudas que incrementan día tras día y con tu sueño lejano de irte a trabajar a un lugar muy lejano digamos (Puebla) jaja y ser libre de hacer lo que quieras.</p>
+                <p>En ciertos momentos divagas en la realidad pensando en muchas cosas o problemas que tu misma a veces ocasiones pero tu frase es  “Perdón me fui”.</p>
+                <p>Me sorprende que hagas tantas cosas en tan poco tiempo.</p>
+                <p><span id="resaltado">Ranking de canciones</span></p>
+                <div class='particion'>
+                            
+                            <p>1.- Todo cuenta - Dld</p>
+                            <audio width='220' height='40' controls='controls'>
+                                <source src="media/todo.mp3" >
+                            </audio>
+                            <p>2.- Loco - Enrique Iglesias</p>
+                            <audio controls='controls'>
+                                <source src="media/loco.mp3">
+                            </audio>
+                            <p>3.- Y te vas - Banda Carnaval</p>
+                            <audio controls='controls'>
+                                <source src="media/tevas.mp3">
+                            </audio>
+                            <p>4.- Rival - Romeo Santos</p>
+                            <audio controls='controls'>
+                                <source src="media/Rival.mp3">
+                            </audio>
+                            <p>5.- Nada nuevo bajo el sol - Bunkers</p>
+                            <audio controls='controls'>
+                                <source src="media/nada.mp3">
+                            </audio>
+                            <p>6.- Beautiful - Gustavo Cerati</p>
+                            <audio controls='controls'>
+                                <source src="media/beautiful.mp3">
+                            </audio>
+                        </div>
+
+ 
+            </div><!--Contenido Principal-->
+            </section>
+            <footer>
+                <div id="facebook">
+                <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FnubeBeta&amp;width=150&amp;height=65&amp;colorscheme=light&amp;layout=box_count&amp;action=like&amp;show_faces=true&amp;send=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:150px; height:65px;" allowTransparency="true"></iframe>
+            </div><!--version2-->
+                Derechos reservados 2013. Politicas de privacidad de Omar Zarate Company.
+            </footer><!--Pie de pagina-->    
+        </div> <!--Contenedor Principal-->
+    </body>
+</html>

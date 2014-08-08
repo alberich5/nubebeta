@@ -1,0 +1,24 @@
+#formulario{
+	margin-top: -20px;
+	padding: 40px; 
+}
+input[type="submit"]{
+	background: #FF9A55;
+	border-radius: 0 .5em;
+	color: #500;
+	font-family: Arial;
+	font-size: 1.5em;
+}
+input[type="submit"]:hover{
+	background: #7BBFD5;
+	border-radius: .5em 0;
+	color: #000;
+	cursor: pointer;
+}
+.cambio{
+	trasition: all 2.5s ease-out;
+	-ms-trasition: all 2.5s ease-out;
+	-moz-trasition: all 2.5s ease-out;
+	-o-trasition: all 2.5s ease-out;
+	-webkit-trasition: all 2.5s ease-out;
+}

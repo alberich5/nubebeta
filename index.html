@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Pltaforma Educativa</title>
+        <link rel="stylesheet" type="text/css" href="css/etiquetas.css">
+        <link rel="stylesheet" type="text/css" href="css/estructura.css">
+        <meta name='author' content='Omar Zarate Hipolito'/>
+        <meta charset="utf-8" />
+        <meta name='description' content="Sitio dedicado a creacion de paginas web en html5"/>
+
+
+    </head>
+    
+    <body>
+        <div id="principal">
+            <header>
+            <h1 id="nube">Nube beta</h1>
+                <a href="index.html" title="Inicio"><img src="images/logoo.png" alt="Logotipo"></a>
+            </header>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html" title="Inicio">Inicio</a></li>
+                    <li><a href="Biografia.html" title="Mision">Misión</a></li>
+                    <li><a href="temas.html" title="Vision">Vision</a></li>
+                    <li><a href="Herramientas.html" title="Chat">Chat</a></li>
+                    <li><a href="Social.html" title="VideosTutoriales">VideoTutoriales</a></li>
+                    <li><a href="Contacto.html" title="Mensajes">Mensajes</a></li> 
+                    <li><a href="Cultura/index.html" title="Ejercicios">Ejercicios</a></li>
+                    <li><a href="Cisco.html" title="Dudas">Dudas</a></li> 
+                    
+                </ul>
+                
+                
+            </nav>
+            
+            <aside>
+                <div id="slides">
+                    <img src="images/virtual.png" title="Plataforma">
+                    <a href="Cultura/index.html"><img src="images/plata.png" title="Comunidad"></a><!--Nuevo-->
+                    <img src="images/slide1.jpg" title="html">
+                </div>
+            </aside>
+            <section>
+                <article class="bloques">
+                    <header>
+                        <hgroup>
+                          <h1>Cursos Java</h1>  
+                        </hgroup>
+                    </header>
+                        <p>Java es un lenguaje de programacio orientado a Objectos muy utlizado para generar
+                        proyectos de ejecucion ene el escritorio y android.</p>
+                        <p>Su intención es permitir que los desarrolladores de aplicaciones escriban el programa una vez</p>
+                        <a href="temas/googlevsfacebook.html" title="Ver más" class="boton">Ver más</a>
+                </article>
+                
+                <article class="bloques">
+                        <hgroup>
+                        <h2>Bases Datos</h2>
+                        </hgroup>
+                        <p>Este es un post aprenderas como solucionar pequeños problemas de bases de datos.
+                        Y como configurar gestor de bases de Datos</p>
+                        <a href="herramientas/proxy.html" title="Ver mas" class="boton">Ver mas</a>
+                </article>
+                
+                <article class="bloques">
+                        <hgroup>
+                        <h2>Como Utilizarlo</h2>
+                        </hgroup>
+                        <video controls src="media/facebook.mp4" type="video/mp4" poster=""></video>
+                </article>
+            </section>
+            <footer>
+                <article>
+                    <section class="elementoPie">
+                        
+                    </section>
+                    <section class="elementoPie" id="busquedasRecientes">
+                        <h2>Última búsqueda</h2>
+                    </section>
+                    <section class="elementoPie">
+                        <canvas id="lienzo" width="300px" height="210px">
+                        </canvas>
+                    </section>
+                </article> 
+               <div id="facebook">
+                <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FnubeBeta&amp;width=150&amp;height=65&amp;colorscheme=light&amp;layout=box_count&amp;action=like&amp;show_faces=true&amp;send=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:150px; height:65px;" allowTransparency="true"></iframe>
+            </div><!--version2-->
+            </footer>
+        </div>
+        
+        <script type="text/javascript">        
+            function cargaContextoCanvas(idCanvas){
+               var elemento = document.getElementById(idCanvas);
+               if(elemento && elemento.getContext){
+                  var contexto = elemento.getContext('2d');
+                  if(contexto){
+                    return contexto;
+                  }
+               }
+               return FALSE;
+            }
+            
+            
+            function registraBusqueda(){
+                var busqueda = "<h3 color='#fff'>" + document.getElementById('buscador').value + "</h3>";
+                localStorage.setItem("ultimaBusqueda", busqueda);
+            }
+                
+                function mostrarBusqueda (){
+                    if(localStorage.getItem("ultimaBusqueda") != undefined){
+                        var contenedor = document.getElementById('busquedasRecientes');
+                        contenedor.innerHTML +=  localStorage.getItem("ultimaBusqueda");
+                    }  
+                }
+                
+            window.onload = function(){
+                    var ctx = cargaContextoCanvas('lienzo');
+                    if(ctx){
+                        var img = new Image();
+                        img.src = 'images/HTML5logo.svg';
+                        img.onload = function(){
+                        ctx.drawImage(img, 40, 10);
+                        }
+                    }
+                mostrarBusqueda();
+                }
+        </script>
+    </body>
+</html>

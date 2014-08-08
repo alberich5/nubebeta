@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Animacion en Html5</title>
+        <link rel="stylesheet" type="text/css" href="../css/etiquetas.css">
+        <link rel="stylesheet" type="text/css" href="../css/estructura.css">
+        <script type="text/javascript" href="js/contenido.js"></script>
+        <meta charset="utf-8"/>
+    </head>
+    
+    <body>
+        <div id="principal">
+                        <!--Cabecera de la pagina y donde se encuentra el logo-->
+            <header>
+                <a href="../index.html" title="Inicio"><img id="logo" src="../images/logoo.png" alt="Logotipo"></a>
+            </header>
+            <section> 
+                        <!--Pequeño estilo en el div que contiene el contenido-->
+            <div id="tema" style="height:2500px;width:420;border:1px solid #99ccff;overflow:auto;">
+                 <h2>Primera Animacion con HTML5 y CSS3</h2>
+                        <p>Hola en este post vamos a crear una pequeña animacion de inicio para dar la bienvenida a todos y tambien se podra usar para mostrar noticias.</p>
+                        <p>Bueno comencemos primero ocuparemos la plantilla del segundo post que fue <span id="resaltado">Aplicando Css3 al Html5</span> sino lo tienen vallan y descárguenselo .Ya que lo tengan descargado solo cambiaremos algunas cosas.</p>
+                        <p>En el index cambiaremos algunas cosas.Quitamos el <span id="resaltado">elemento p</span> de body y agregamos lo siguiente.</p>
+                        <div >
+                            <img id="foto" src="images/ani1.JPG" title="Html5 body">
+                        </div> 
+                        <p>Lo que agregamos arriba fue un <span id="resaltado">div con un id propio</span> y dentro colocamos tres images que contienen: <span id="resaltado">src</span> es la ubicacion de la imagen y <span id="resaltado">title</span> es el nombre de la imagen.Y ese es todo la modificacion el Index a hora vamos con la hoja de estilos.</p>
+                        <p>Para probarlo en sus maquinas descargen la carpeta de imagenes que ocupo <a href="https://www.dropbox.com/s/xcw3q488lhobm6x/images.rar">aqui</a>.</p>
+                        <p>Sigamos en la hoja de estilo para empezar cambiaremos algunos atributos de <span id="resaltado">contenedor</span> como se muestra abajo.</p>
+                        <div >
+                            <img id="foto" src="images/ani2.JPG" title="Id contenedor">
+                        </div> 
+                        <p>Ahora si empecemos con la parte de la animacion comenzando primero agregandole estilo a <span id="resaltado">aside</span>.</p>
+                        <div >
+                            <img id="foto" src="images/ani3.JPG" title="Agregamos aside">
+                        </div> 
+                        <p>Ahora agregando estilo al div que contiene las imagenes utilizando su id.</p>
+                        <div >
+                            <img id="foto" src="images/ani4.JPG" title="Agregamos slides">
+                        </div> 
+                        <p>Ahora daremos estilo a las images haciendo que floten ala izquierda y ocupe todo el ancho que le dimos en <span id="resaltado">#slides</span>.</p>
+                        <div >
+                            <img id="foto" src="images/ani5.JPG" title="Estilo a img">
+                        </div> 
+                        <p>Ahora si creamos el elemento <span id="resaltado">animaSlide</span> quien en realidad se encarga de hacer la animacion.</p>
+                        <div >
+                            <img id="foto" src="images/ani6.JPG" title="Creamos AnimaSlide">
+                        </div> 
+                        <p>Listo ya tienen su animacion.Lo que ocurrio aqui fue que colocamos tres imagenes que las hicimos flotar ala izquierda y agrandamos el ancho del div para que cabieran las imagenes y la animacion se encargaba de recorrer hacia atras para mostrar cada imagen en distintas posiciones del div es por eso que colocaba numeros negativos.</p>
+                        <p>Dar click a los botones para ver o descargar.</p>
+                        <div id="ver"><a href="http://nubebeta.hol.es/ejemplos/animacion y html5/index.html">Ver</a></div>
+                        <div id="ver"><a href="https://www.dropbox.com/s/37avcb16n8hhnc2/animacion y html5.rar">Descargar</a></div>
+                        <div align="right" style="margin-right: 20px;"><a href="Galeria.html">Siguiente post</a></div>
+                        <div align="left" style="margin-right: 20px;"><a href="conexionmsql.html">Anterior Post</a></div>
+            </div><!--Contenido Principal-->
+            </section>
+            <footer>
+                Derechos reservados 2013. Politicas de privacidad de Omar Zarate Company.
+            </footer><!--Pie de pagina-->    
+        </div> <!--Contenedor Principal-->
+    </body>
+</html>

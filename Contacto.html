@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Nube Beta</title>
+        <link rel="stylesheet" type="text/css" href="css/etiquetas.css">
+        <link rel="stylesheet" type="text/css" href="css/estructura.css">
+        <link rel="stylesheet" type="text/css" href="css/formulario.css">
+        <script type="text/javascript" href="js/contenido.js"></script>
+        <meta charset="utf-8" />
+    </head>
+    
+    <body>
+        <div id="principal">
+            <header>
+                <a href="index.html" title="Inicio"><img src="images/logoo.png" alt="Logotipo"></a>
+            </header>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html" title="Inicio">Inicio</a></li>
+                    <li><a href="Biografia.html" title="Sección">Biografia</a></li>
+                    <li><a href="temas.html" title="Html5">Html5</a></li>
+                    <li><a href="Herramientas.html" title="Herramientas">Android</a></li>
+                    <li><a href="Social.html" title="Social">Social</a></li>
+                    <li><a href="Contacto.html" title="Contacto">Contacto</a></li> 
+                    <li><a href="Cultura/index.html" title="Libros">Libros</a></li> 
+                    <li><a href="Cisco.html" title="Cisco">Cisco Packet Tracer</a></li>
+                    <li><a href="Ella/Ella.html" title="Ella">Ella</a></li> 
+                </ul>
+            </nav>
+            <section> 
+            <div class="contenido">
+                    <h2>Contactame</h2>
+                        <p>Si te gusto este pequeño ejemplo que en teoria podriamos y deberiasmos saber hacer en este momento de la Universidad por nadie me va a dejar mentir que hemos tenido grandes profesores de programacion web que no son los tipicos que llegan y ponen una dispositivas y explican la clase NO! de esos profesores no hemos tenido jajaja. Bueno no estoy aqui para poner en evidencia todo lo que he aprendido.<span id="resaltado">!SI TE GUSTO ESTE PEQUEÑA PAGINA O QUE TE GUSTARIA AGREGAR O CAMBIAR ALGO SOLO ENVIAME UN MENSAJE !!!</span></p>
+                <h2 style="text-align: center;" ><span id="resaltado">Fuera de servicio temporalmente</span></h2>
+                <div id="formulario">
+                <form action="php/procesar.php" method="POST" name="form">
+
+                    <label>Nombre:</label><br/>
+                    <input type="text" class="campo" id="tfnombre" name="nombre_txt" placeholder="Escribe tu nombre" required /><br/>
+
+                    <label>Correo Electr&oacute;nico:</label><br/>
+                    <input type="email" class="campo" id="tfcorreo" name="email_txt" placeholder="Escribe tu email" required name="desde"/><br/>
+
+                    <label>Asunto:</label><br/>
+                    <input type="text" class="campo" id="tfasunto" name="asunto_txt" placeholder="Asunto" name="asunto" required/><br/>
+
+                    <label>Mensaje</label><br/>
+                    <textarea id="tfmensaje" cols="30" rows="10" placeholder="Comentario" name="mensaje_txt" required></textarea><br/>
+
+                    <input type="submit" id="bEnviar" value="Enviar formulario" class="cambio"/>
+                </form>
+                <h3 style="float: right;" >Dale like y comenta</h3>
+            </div><!--formulario-->
+            </div><!--contenido-->
+            </section>
+            <footer>
+            <div id="facebook">
+                <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FnubeBeta&amp;width=150&amp;height=65&amp;colorscheme=light&amp;layout=box_count&amp;action=like&amp;show_faces=true&amp;send=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:150px; height:65px;" allowTransparency="true"></iframe>
+            </div><!--version2-->
+            <div id="twitter">
+                <a href="https://twitter.com/omar_ARETAZ" class="twitter-follow-button" data-show-count="false" data-lang="es">Seguir a @omar_ARETAZ</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            </div><!--version 3-->
+                Derechos reservados 2013. Politicas de privacidad de Omar Zarate Company.
+            </footer>     
+        </div> <!--principal-->
+    </body>
+</html>
